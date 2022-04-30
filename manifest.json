@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "Linkedin Denotify",
+    "description": "Remove the notification number callout on LinkedIn because they're never useful",
+    "version": "0.0.1",
+    "content_scripts": [{
+        "matches": ["https://www.linkedin.com/*"],
+        "css": ["style.css"],
+        "run_at": "document_start"
+    }],
+    "permissions": ["activeTab"]
+}
